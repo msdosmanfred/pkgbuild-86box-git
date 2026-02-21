@@ -1,4 +1,4 @@
-# Maintainer: Lili1228 <aur at lili dot lgbt>
+# Maintainer: MS-DOS Manfred
 pkgname=86box-git
 pkgver=5.3.r548.g9b3da6606
 pkgrel=1
