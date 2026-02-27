@@ -23,7 +23,7 @@ source=(
   "${pkgname}-assets::git+https://github.com/86Box/assets.git"
 )
 sha512sums=('SKIP'
-            'SKIP')
+  'SKIP')
 
 pkgver() {
   cd $pkgname
@@ -37,7 +37,7 @@ build() {
 
 package() {
   DESTDIR="${pkgdir}" cmake --build "${srcdir}/build" --target install
-  for i in 48x48 64x64 72x72 96x96 128x128 192x192 256x256 512x512; do
+  for i in 48x48 64x64 72x72 128x128 256x256; do
     install -Dm644 "$srcdir/$pkgname/src/unix/assets/$i/net.86box.86Box.png" -t "$pkgdir/usr/share/icons/hicolor/$i/apps"
   done
   install -Dm644 "$srcdir/$pkgname/src/unix/assets/net.86box.86Box.desktop" "$pkgdir/usr/share/applications/net.86box.86Box.desktop"
