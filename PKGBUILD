@@ -16,7 +16,7 @@ optdepends=(
   'libpcap: Networking not limited to TCP/IP'
 )
 provides=('86box')
-conflicts=('86box')
+conflicts=('86box' '86box-odr-git')
 options=('!buildflags')
 source=(
   "${pkgname}::git+https://github.com/86Box/86Box.git"
