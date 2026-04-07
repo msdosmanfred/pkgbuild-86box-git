@@ -31,7 +31,7 @@ pkgver() {
 }
 
 build() {
-  LDFLAGS='-z now -z shstk' cmake -S$pkgname -Bbuild --preset regular --toolchain "cmake/flags-gcc-${CARCH}.cmake" -DCMAKE_INSTALL_PREFIX=/usr -DUSE_QT6=on -DNEW_DYNAREC=on #-DEMU_GIT_HASH="$(GIT_DIR=86box-git/.git git rev-parse --short HEAD)"
+  LDFLAGS='-z now -z shstk' cmake -S$pkgname -Bbuild --preset regular --toolchain "cmake/flags-gcc-${CARCH}.cmake" -DCMAKE_INSTALL_PREFIX=/usr -DUSE_QT6=on -DNEW_DYNAREC=on -DEMU_GIT_HASH="$(GIT_DIR=86box-git/.git git rev-parse --short HEAD)"
   cmake --build build
 }
 
