@@ -1,6 +1,6 @@
 # Maintainer: MS-DOS Manfred
 pkgname=86box-git
-pkgver=f52a3ff14755cf9addc1856c166bb20cc8bd3f87
+pkgver=a4c0f0eb9e488fb51de72e60382f443f326998b9
 pkgrel=1
 pkgdesc='An emulator for classic IBM PC clones'
 arch=('x86_64' 'aarch64') # use 86box-5.1 for pentium4 and armv7h
