@@ -1,6 +1,6 @@
-# Maintainer: MS-DOS Manfred
+# Maintainer: Alexander Höfer <hoefer9 at gmail dot com>
 pkgname=86box-git
-pkgver=6.0.r605.g0044e338c
+pkgver=6.0.r1490.g21e179819
 pkgrel=1
 pkgdesc='An emulator for classic IBM PC clones'
 arch=('x86_64' 'aarch64') # use 86box-5.1 for pentium4 and armv7h
@@ -16,7 +16,7 @@ optdepends=(
   'libpcap: Networking not limited to TCP/IP'
 )
 provides=('86box')
-conflicts=('86box' '86box-odr-git')
+conflicts=('86box' '86box-odr-git' 'pcbox-git')
 options=('!buildflags')
 source=(
   "${pkgname}::git+https://github.com/86Box/86Box.git"
