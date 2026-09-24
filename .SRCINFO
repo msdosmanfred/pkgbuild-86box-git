@@ -1,6 +1,6 @@
 pkgbase = 86box-git
 	pkgdesc = An emulator for classic IBM PC clones
-	pkgver = 6.0.r2702.g571ab627f
+	pkgver = 6.0.r2831.g48e098d45
 	pkgrel = 1
 	url = https://86box.net/
 	arch = x86_64
