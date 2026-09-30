@@ -1,6 +1,6 @@
 # Maintainer: Alexander Höfer <hoefer9 at gmail dot com>
 pkgname=86box-git
-pkgver=6.0.r3116.g4aef2af39
+pkgver=6.0.r3145.g472239cf8
 pkgrel=1
 pkgdesc='An emulator for classic IBM PC clones'
 arch=('x86_64' 'aarch64') # use 86box-5.1 for pentium4 and armv7h
@@ -31,7 +31,7 @@ pkgver() {
 }
 
 build() {
-  LDFLAGS='-z now -z shstk' cmake -S$pkgname -Bbuild --preset regular -DCMAKE_INSTALL_PREFIX=/usr -DUSE_QT6=on -DNEW_DYNAREC=on -DDEV_BRANCH=on -DEMU_GIT_HASH="$(GIT_DIR=86box-git/.git git rev-parse --short HEAD)"
+  LDFLAGS='-z now -z shstk' cmake -S$pkgname -Bbuild --preset regular -DCMAKE_INSTALL_PREFIX=/usr -DUSE_QT6=on -DNEW_DYNAREC=on -DDEV_BRANCH=off -DEMU_GIT_HASH="$(GIT_DIR=86box-git/.git git rev-parse --short HEAD)"
   cmake --build build
 }
 
