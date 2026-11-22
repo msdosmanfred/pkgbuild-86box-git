@@ -1,6 +1,6 @@
 # Maintainer: Alexander Höfer <hoefer9 at gmail dot com>
 pkgname=86box-git
-pkgver=6.0.r6143.g8a75aebd2
+pkgver=6.0.r6162.gc7a4815f5
 pkgrel=1
 pkgdesc='An emulator for classic IBM PC clones'
 arch=('x86_64' 'aarch64') # use 86box-5.1 for pentium4 and armv7h
